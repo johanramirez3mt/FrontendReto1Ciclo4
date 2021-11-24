@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GestionUsuarios-Reto01</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+        crossorigin="anonymous">
+
+    <link type="text/css" href="/css/style_Base.css" rel="stylesheet">
+
+    <script type="text/javascript" src="/js/GestionUsuarios.js"></script>
+
+</head>
+    <body>
+        <div style="margin-bottom: 30px;"></div> <!-- Espacio -->
+        <form id="formGuardar" onsubmit="guardarUsuario()">
+            <!-- ************************* Row 1 - Titulo Modulo ********************************************************* -->
+            <div class="row g-0">
+                <div class="col-lg-4 bordeDivRojo" align="right">
+                    <!-- Columna 1 Vacia -->
+                </div>
+
+                <div class="col-lg-4 bordeDivRojo" align="center"> <!-- Columna 2 -->
+                    <label style="font-size: 200%" class="txtBlanco letraHeaderFoot">Registro<span class="txtVerde"> de Usuarios</span></label>
+                </div>
+
+                <div class="col-lg-4 bordeDivRojo" align="left">
+                    <!-- Columna 3 Vacia -->
+                </div>
+            </div>
+            <!-- ************************* Termina Row 1 - Titulo Modulo ************************************************* -->
+
+            <div style="margin-bottom: 20px;"></div> <!-- Espacio -->
+
+            <!-- ************************* Row 2 - Grilla **************************************************************** -->
+            <div class="row g-0 divInputSection">
+                <div class="col-lg-2 bordeDivRojo">
+                    <!-- Columna 1 Vacia -->
+                </div>
+
+                <div class="col-lg-8 bordeDivRojo" align="center"> <!-- Columna 4 -->
+                    
+                </div>
+
+                <!-- <div class="col-lg-8 bordeDivRojo EfectoSombraTabla" style=" height: 200px; overflow: scroll;" align="center">
+                    <table id="tblClientes" class="table-hover" style="width:1000px">
+                        <thead>
+                            <tr class="encabezadotabla">
+                                <th scope="col">Id:</th>
+                                <th scope="col">Nombre:</th>
+                                <th scope="col">Email:</th>
+                                <th scope="col">Edad:</th>
+                                <th scope="col">Contraseña:</th>
+                                <th scope="col">Opciones:</th>
+                            </tr>
+                        </thead>
+                        <tbody id="resultado">
+                        </tbody>
+                    </table>
+                </div> -->
+
+                <div class="col-lg-2 bordeDivRojo">
+                    <!-- Columna 8 Vacia -->
+                </div>
+            </div>
+            <!-- ************************* Termina Row 2 - Grilla ******************************************************** -->
+
+            <div style="margin-bottom: 10px;"></div> <!-- Espacio -->
+
+            <!-- ************************* Row 3 - Inputs **************************************************************** -->
+            <div class="row g-0">
+                <div class="col-lg-3 bordeDivRojo">
+                    <!-- Columna 1 Vacia -->
+                </div>
+
+                <div class="col-lg-3 bordeDivRojo" align="center">
+                    <div class="txtNaranjaBold bordeDivRojo" style="width: 80%; height: 25px" align="left">
+                        Nombre:
+                    </div>
+
+                    <div class="bordeDivRojo" style="width: 80%;" align="center">
+                        <input id="name" class="form-control" type="text" placeholder="Digite Nombre" required>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 bordeDivRojo" align="center">
+                    <div class="txtNaranjaBold bordeDivRojo" style="width: 80%; height: 25px" align="left">
+                        Email:
+                    </div>
+
+                    <div class="bordeDivRojo" style="width: 80%;" align="center">
+                        <input id="email" class="form-control" type="email" placeholder="Digite Email" required>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 bordeDivRojo">
+                    <!-- Columna 1 Vacia -->
+                </div>
+            </div>
+            <!-- ************************* Termina Row 3 - Inputs ******************************************************** -->
+
+            <div style="margin-bottom: 15px;"></div> <!-- Espacio -->
+
+            <!-- ************************* Row 4 - Inputs **************************************************************** -->
+            <div class="row g-0">
+                <div class="col-lg-3 bordeDivRojo">
+                    <!-- Columna 1 Vacia -->
+                </div>
+
+                <div class="col-lg-3 bordeDivRojo" align="center">
+                    <div class="txtNaranjaBold bordeDivRojo" style="width: 80%; height: 25px" align="left">
+                        Contraseña:
+                    </div>
+
+                    <div class="bordeDivRojo" style="width: 80%;" align="center">
+                        <input id="password" class="form-control" type="password" placeholder="Digite la Contraseña" required>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 bordeDivRojo" align="center">
+                    <div class="txtNaranjaBold bordeDivRojo" style="width: 80%; height: 25px" align="left">
+                        Confirme Contraseña:
+                    </div>
+
+                    <div class="bordeDivRojo" style="width: 80%;" align="center">
+                        <input id="password2" class="form-control" type="password" placeholder="Confirme la Contraseña" required>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 bordeDivRojo">
+                    <!-- Columna 1 Vacia -->
+                </div>
+            </div>
+            <!-- ************************* Termina Row 4 - Inputs ******************************************************** -->
+
+            <div style="margin-bottom: 30px;"></div> <!-- Espacio -->
+
+            <!-- ************************* Row 6 - Iconos **************************************************************** -->
+            <div class="row g-0">
+                <div class="col-lg-3 bordeDivRojo" align="center">
+                    <!-- Columna 1 Vacia -->
+                </div>
+
+                <div class="col-lg-2 bordeDivRojo" align="center"> <!-- Columna 4 Vacia -->
+                    <div>
+                        <button type="submit" style="background-color: Transparent;
+                        background-repeat:no-repeat;border: none;overflow: hidden;">
+                        <img src="/Imagenes/Guardar.png" width="50" height="50"></button>
+                    </div>
+                    <div>
+                        <button type="submit" style="font-weight:bold; color:#FFB233; font-size: 13px;background-color: Transparent">Guardar</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 bordeDivRojo" align="center"> <!-- Columna 2 Vacia -->
+
+                </div>
+
+                <div class="col-lg-2 bordeDivRojo" align="center"> <!-- Columna 4 Vacia -->
+                    <div>
+                        <a href="/Templates/login.html" style="background-color: Transparent;
+                        background-repeat:no-repeat;border: none;overflow: hidden;">
+                        <img src="/Imagenes/Salir.png" width="50" height="50"></a>
+                    </div>
+
+                    <div>
+                        <a href="#" style="font-weight:bold; color:#FFB233; font-size: 13px;">Salir</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 bordeDivRojo" align="center">
+                    <!-- Columna 7 Vacia -->
+                </div>
+            </div>
+            <!-- ************************* Termin Row 6 - Iconos **************************************************************** -->
+        </form>
+        <!-- Para mostrar ventanas emergentes mas bonitas y pro, hay que instalar el sweetalert2 en django -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    </body>
+</html>
