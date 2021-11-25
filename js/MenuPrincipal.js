@@ -1,8 +1,4 @@
-//document.getElementById("varUsuario") = localStorage.getItem('usuario');
-//$(".varUsuario").val(localStorage.getItem('usuario'));
-//$("#varUsuario").val() = localStorage.getItem('usuario');
-//$('#varUsuario').val(localStorage.getItem('usuario'));
 window.onload = function(){
+    //Cargamos el valor de la local storage en el inputr del menu principal
     $('#varUsuario').val(localStorage.getItem('usuario'));
 }
-//alert(localStorage.getItem('usuario'))

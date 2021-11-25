@@ -18,7 +18,7 @@ function guardarUsuario(){
             contentType: "application/json; charset=utf-8",
             data:dataToSend,
             datatype:"JSON",
-            url:"http://localhost:8080/api/user/new",
+            url:"http://150.230.41.201:80/api/user/new",
             success:function(respuesta){
                 if (respuesta.id != null) {
                     $("#email").val("");
