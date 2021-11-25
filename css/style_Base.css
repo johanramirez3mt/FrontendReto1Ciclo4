@@ -31,6 +31,12 @@
 
     .bordeDivRojo {border: 1px transparent red;}
 
+    .inputUsu {
+        color: black;
+        text-align: center;
+        width:70%;
+    }
+
 /* +++++++++++++++++++++++++++++++++++ Inicia Colores Texto +++++++++++++++++++++++++++++++++++ */
 
     .txtBlanco {color: white;}

@@ -11,6 +11,9 @@
         crossorigin="anonymous">
 
     <link type="text/css" href="/css/style_Base.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/js/MenuPrincipal.js"></script>
 
 </head>
     <body>
@@ -36,85 +39,52 @@
 
             <!-- **************************** Sección Titulo Modulo **************************************** -->
             <div class="row g-0">
-                <div class="col-lg-4" align="right">  <!-- Div Columna 1 Izquierda -->
+                <div class="col-lg-2 bordeDivRojo" align="right">  <!-- Div Columna 1 Izquierda -->
                 <!-- Columna Vacia -->
                 </div>
 
-                <div class="col-lg-4" align="center"> <!-- Div Columna 2 Centro - Login -->
-                    <h1 class="text-light">Bienvenido <span style="color: #00ac98">{{% usuario %}}</span></h5>
+                <div class="col-lg-8 bordeDivRojo" align="center"> <!-- Div Columna 2 Centro - Login -->
+                    <h1 class="text-light">Bienvenido</h5>
                 </div>
 
-                <div class="col-lg-4" align="left"> <!-- Div Columna 3 Derecha -->
+                <div class="col-lg-2 bordeDivRojo" align="left"> <!-- Div Columna 3 Derecha -->
                     <!-- Columna Vacia -->
                 </div>
             </div>
             <!-- **************************** Termina Sección Titulo Modulo ******************************** -->
 
+            <div style="margin-bottom: 30px;"></div> <!-- Espacio -->
+
+             <!-- **************************** Sección Input Usuario **************************************** -->
+            <div class="row g-0">
+                <div class="col-lg-2 bordeDivRojo" align="right">  <!-- Div Columna 1 Izquierda -->
+                <!-- Columna Vacia -->
+                </div>
+
+                <div class="col-lg-8 bordeDivRojo" align="center"> <!-- Div Columna 2 Centro - Login -->
+                    <input class="inputUsu" type="text" name="varUsuario" id="varUsuario">
+                </div>
+
+                <div class="col-lg-2 bordeDivRojo" align="left"> <!-- Div Columna 3 Derecha -->
+                    <!-- Columna Vacia -->
+                </div>
+            </div>
+            <!-- **************************** Termina Sección Input Usuario ******************************** -->
+
             <div style="margin-bottom: 50px;"></div> <!-- Espacio -->
 
             <!-- **************************** Row 3 - iconos Menu ********************************* -->
             <div class="row g-0">
-                <div class="col-lg-1" align="center">  <!-- Div Columna 1 Izquierda -->
+                <div class="col-lg-4 bordeDivRojo" align="center">  <!-- Div Columna 1 Izquierda -->
 
                 </div>
 
-                <div class="col-lg-2" align="center"> <!-- Div Columna 3 Derecha -->
-                    <!-- <div>
-                        <a href="/Templates/GestionCategrias.html" style="background-color: Transparent;
-                        background-repeat:no-repeat;border: none;overflow: hidden;">
-                        <img src="/imagenes/Categoria.png" width="115" height="120"></a>
-                    </div>
-                    <div>
-                        <a href="/Templates/GestionCategrias.html" style="font-weight:bold; color:#FFB233">Gestión de Categorías</a>
-                    </div> -->
+                <div class="col-lg-4 bordeDivRojo" align="center"> <!-- Div Columna 3 Derecha -->
+                    <a href="/Templates/login.html" style="font-weight:bold; color:#3374ff">Salir</a>
                 </div>
 
-                <div class="col-lg-2" align="center">  <!-- Div Columna 1 Izquierda -->
-                    <!-- <div>
-                        <a href="/Templates/GestionBarcos.html" style="background-color: Transparent;
-                        background-repeat:no-repeat;border: none;overflow: hidden;">
-                        <img src="/imagenes/Barcos1.png" width="115" height="120"></a>
-                    </div>
-                    <div>
-                        <a href="#" style="font-weight:bold; color:#FFB233">Gestión de Barcos</a>
-                    </div> -->
-                </div>
+                <div class="col-lg-4 bordeDivRojo" align="center">  <!-- Div Columna 1 Izquierda -->
 
-                <div class="col-lg-2" align="center"> <!-- Div Columna 3 Derecha -->
-                    <!-- <div>
-                        <a href="/Templates/GestionClientes.html" style="background-color: Transparent;
-                        background-repeat:no-repeat;border: none;overflow: hidden;">
-                        <img src="/imagenes/Registro.png" width="115" height="120"></a>
-                    </div>
-                    <div>
-                        <a href="/Templates/GestionClientes.html" style="font-weight:bold; color:#FFB233">Gestión de Clientes</a> -->
-                    </div>
-                </div>
-
-                <div class="col-lg-2" align="center"> <!-- Div Columna 3 Derecha -->
-                    <!-- <div>
-                        <a href="/Templates/GestionReservas.html" style="background-color: Transparent;
-                        background-repeat:no-repeat;border: none;overflow: hidden;">
-                        <img src="/imagenes/Calendar.png" width="115" height="120"></a>
-                    </div>
-                    <div>
-                        <a href="/Templates/GestionReservas.html" style="font-weight:bold; color:#FFB233">Gestión de Reservas</a>
-                    </div> -->
-                </div>
-
-                <div class="col-lg-2" align="center"> <!-- Div Columna 3 Derecha -->
-                    <!-- <div>
-                        <a href="/Templates/GestionInformes.html" style="background-color: Transparent;
-                        background-repeat:no-repeat;border: none;overflow: hidden;">
-                        <img src="/imagenes/Informes.png" width="115" height="120"></a>
-                    </div>
-                    <div>
-                        <a href="/Templates/GestionInformes.html" style="font-weight:bold; color:#FFB233">Informes</a>
-                    </div> -->
-                </div>
-
-                <div class="col-lg-1" align="center"> <!-- Div Columna 3 Derecha -->
-                    <!-- Columna Vacia -->
                 </div>
             </div>
 
@@ -146,9 +116,7 @@
         <div style="margin-bottom: 60px;"></div> <!-- Espacio -->
 
                 <!-- Para mostrar ventanas emergentes mas bonitas y pro, hay que instalar el sweetalert2 en django -->
-                <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-                <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     </body>
 
 
