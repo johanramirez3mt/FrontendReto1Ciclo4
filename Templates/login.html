@@ -11,31 +11,35 @@
         crossorigin="anonymous">
 
     <link type="text/css" href="/css/style_Base.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/js/login.js"></script>
 
 </head>
     <body>
-        <div style="margin-bottom: 30px;"></div> <!-- Espacio -->
+        <div style="margin-bottom: 20px;"></div> <!-- Espacio -->
 
-        <!-- **************************** Row 1 - Sección Titulo Principal **************************************** -->
+        <!-- **************************** Sección - Logo ************************************************************ -->
         <div class="row g-0 bordeDivRojo">
             <div class="col-lg-1 bordeDivRojo" align="right">  <!-- Div Columna 1 Izquierda -->
             <!-- Columna Vacia -->
             </div>
 
             <div class="col-lg-10 bordeDivRojo" align="center"> <!-- Div Columna 2 Centro - Login -->
-                <h1><a href="" class="text-light">Aplicación Web </a><span><a href="" style="color: #00ac98"> - Reto 01</a></span></h5>
+                <img src="/Imagenes/LogoTranparent.png" alt="" width="250" height="250">
             </div>
 
             <div class="col-lg-1 bordeDivRojo" align="left"> <!-- Div Columna 3 Derecha -->
                 <!-- Columna Vacia -->
             </div>
         </div>
-        <!-- **************************** Termina Row 1 - Sección Titulo Principal ******************************** -->
+        <!-- **************************** Termina - Sección Logo **************************************************** -->
 
-        <div style="margin-bottom: 30px;"></div> <!-- Espacio -->
+        <div style="margin-bottom: 10px;"></div> <!-- Espacio -->
 
-        <!-- **************************** Row 2 - Sección Titulo Modulo ******************************************* -->
+        <div style="margin-bottom: 20px;"></div> <!-- Espacio -->
+
+        <!-- **************************** Sección - Titulo Modulo *************************************************** -->
         <div class="row g-0">
             <div class="col-lg-4 bordeDivRojo" align="right">  <!-- Div Columna 1 Izquierda -->
             <!-- Columna Vacia -->
@@ -49,20 +53,20 @@
                 <!-- Columna Vacia -->
             </div>
         </div>
-        <!-- **************************** Termina Row 2 - Sección Titulo Modulo *********************************** -->
+        <!-- **************************** Termina Sección - Titulo Modulo ******************************************* -->
 
-        <!-- **************************** Row 3 - Sección Form **************************************************** -->
+        <!-- **************************** Sección - Form ************************************************************ -->
         <div class="row g-0">
             <div class="col-lg-4 bordeDivRojo" align="right">  <!-- Div Columna 1 Izquierda -->
             <!-- Columna Vacia -->
             </div>
 
             <div class="col-lg-4 bordeDivRojo" align="center"> <!-- Div Columna 2 Centro - Login -->
-                <form id="formLogueo" onsubmit="Logueo()">
+                <form id="formCuadro" onsubmit="Logueo()">
 
                     <div style="margin-bottom: 30px;"></div> <!-- Espacio -->
 
-                    <!-- *************************** Row 4 - Input Usuario **************************************** -->
+                    <!-- *************************** Row 5 - Input Usuario **************************************** -->
                     <div class="row g-0 bordeDivRojo">
                         <div class="col-lg-1 bordeDivRojo">
                             <!-- Columna 1 Vacia -->
@@ -79,11 +83,11 @@
 
                         </div>
                     </div>
-                    <!-- *************************** Termina Row 4 - Input Usuario ******************************** -->
+                    <!-- *************************** Termina Row 5 - Input Usuario ******************************** -->
 
                     <div style="margin-bottom: 30px;"></div> <!-- Espacio -->
 
-                    <!-- *************************** Row 5 - Input Password **************************************** -->
+                    <!-- *************************** Row 6 - Input Password **************************************** -->
                     <div class="row g-0 bordeDivRojo">
                         <div class="col-lg-1 bordeDivRojo">
                             <!-- Columna 1 Vacia -->
@@ -100,11 +104,11 @@
 
                         </div>
                     </div>
-                    <!-- *************************** Termina Row 5 - Input Password ******************************** -->
+                    <!-- *************************** Termina Row 6 - Input Password ******************************** -->
 
                     <div style="margin-bottom: 20px;"></div> <!-- Espacio -->
 
-                    <!-- *************************** Row 6 - Boton Ingresar **************************************** -->
+                    <!-- *************************** Row 7 - Boton Ingresar **************************************** -->
                     <div class="row g-0 bordeDivRojo">
                         <div class="col-lg-1 bordeDivRojo">
                             <!-- Columna 1 Vacia -->
@@ -118,25 +122,25 @@
 
                         </div>
                     </div>
-                    <!-- *************************** Termina Row 6 - Boton Ingresar ******************************** -->
+                    <!-- *************************** Termina Row 7 - Boton Ingresar ******************************** -->
 
                     <div style="margin-bottom: 20px;"></div> <!-- Espacio -->
 
-                    <!-- *************************** Row 7 - Link Crear Cuenta ************************************* -->
+                    <!-- *************************** Row 8 - Link Crear Cuenta ************************************* -->
                     <div class="row g-0 bordeDivRojo">
                         <div class="col-lg-1 bordeDivRojo">
                             <!-- Columna 1 Vacia -->
                         </div>
 
                         <div class="col-lg-10 bordeDivRojo" align="center"> <!-- Columna 2 -->
-                            <a href="\templates\GestionUsuarios.html" class="text-light">¿No tienes cuenta? </a><span><a href="\templates\GestionUsuarios.html" style="color: #00ac98"> - Crea tu cuenta aquí</a></span>
+                            <span href="\templates\GestionUsuarios.html" class="text-light">¿No tienes cuenta? </span><span><a href="\templates\GestionUsuarios.html" style="color: #00ac98"> Crea tu cuenta aquí</a></span>
                         </div>
 
                         <div class="col-lg-1 bordeDivRojo">
 
                         </div>
                     </div>
-                    <!-- *************************** Termina Row 7 - Link Crear Cuenta ****************************** -->
+                    <!-- *************************** Termina Row 8 - Link Crear Cuenta ****************************** -->
 
                     <div style="margin-bottom: 30px;"></div> <!-- Espacio -->
                 </form>
@@ -146,11 +150,11 @@
                 <!-- Columna Vacia -->
             </div>
         </div>
-        <!-- **************************** Termina Row 3 - Sección Form ******************************************** -->
+        <!-- **************************** Termina Sección - Form **************************************************** -->
 
-        <div style="margin-bottom: 30px;"></div> <!-- Espacio -->
+        <div style="margin-bottom: 20px;"></div> <!-- Espacio -->
 
-        <!-- **************************** Row 8 - Lista Integrantes Grupo ***************************************** -->
+        <!-- **************************** Sección - Lista Integrantes Grupo ***************************************** -->
         <div class="row g-0">
 
             <div class="col-lg-3 bordeDivRojo" align="center"> <!-- Div Columna 3 Derecha -->
@@ -171,12 +175,6 @@
             </div>
 
         </div>
-        <!-- **************************** Termina Row 8 - Lista Integrantes Grupo ********************************* -->
-
-        <!-- Para mostrar ventanas emergentes mas bonitas y pro, hay que instalar el sweetalert2 en django -->
-        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!-- **************************** Termina Sección - Lista Integrantes Grupo ********************************* -->
     </body>
-
 </html>

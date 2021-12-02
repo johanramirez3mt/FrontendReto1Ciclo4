@@ -33,8 +33,14 @@
 
     .inputUsu {
         color: black;
-        text-align: center;
+        text-align: right;
         width:70%;
+    }
+
+    .centrarDiv {
+        display:flex;
+        justify-content: center;
+        align-items: center;
     }
 
 /* +++++++++++++++++++++++++++++++++++ Inicia Colores Texto +++++++++++++++++++++++++++++++++++ */
@@ -58,6 +64,8 @@
     .txtRojo {color: rgba(255, 0, 0, 0.685);}
 
     .txtRojoBold {color: rgba(255, 0, 0, 0.685);font-weight : bold;}
+
+    .txtTransparente {opacity: 0;}
 
 /* +++++++++++++++++++++++++++++++++++ Termina Colores Texto ++++++++++++++++++++++++++++++++++ */
 
@@ -150,74 +158,12 @@
 .bordeSoloInferior {border-bottom: 2px solid black;border-radius: 10px;}
 /* +++++++++++++++++++++++++++++++++++ Termina Clases Bordes Divs +++++++++++++++++++++++++++++ */
 
-
-/* +++++++++++++++++++++++++ Botones Sigep - Contraloria - Procuraduria +++++++++++++++++++++++ */
 .centrarVertical {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-
-.fondoSigep {
-    background-image: url(../Imagenes/logoSigep.png);
-    background-position: center center;
-    background-size: 100px 40px;
-    background-repeat: no-repeat;
-    padding: 10px 60px;
-    border: 1px transparent red;
-    cursor: pointer;
-    border-radius: 20px;
-
-}
-
-.fondoSigep:hover {
-    transform: scale(0.8);
-    box-shadow: 0 0.5em 0.1em 0.05em #db8046;
-    -webkit-box-shadow: 0 0em 0.5em 0.7em #db8046;
-    border-radius: 20px;
-    height: 100%;
-}
-
-.fondoContraloria {
-    background-image: url(../Imagenes/LogoContraloria.jpg);
-    background-position: center center;
-    background-size: 110px 33px;
-    background-repeat: no-repeat;
-    padding: 10px 60px;
-    border: 1px transparent red;
-    cursor: pointer;
-    border-radius: 20px;
-}
-
-.fondoContraloria:hover {
-    transform: scale(0.8);
-    box-shadow: 0 0.5em 0.1em 0.05em #00ac98;
-    -webkit-box-shadow: 0 0em 0.5em 0.7em #db8046;
-    border-radius: 20px;
-    height: 100%;
-}
-
-.fondoProcuraduria {
-    background-image: url(../Imagenes/LogoProcuraduria3.png);
-    background-position: center center;
-    background-size: 100px 45px;
-    background-repeat: no-repeat;
-    padding: 10px 60px;
-    border: 1px transparent red;
-    cursor: pointer;
-    border-radius: 20px;
-}
-
-
-.fondoProcuraduria:hover {
-    transform: scale(0.8);
-    box-shadow: 0 0.5em 0.1em 0.05em #00ac98;
-    -webkit-box-shadow: 0 0em 0.5em 0.7em #db8046;
-    border-radius: 20px;
-    height: 100%;
-}
-/* +++++++++++++++++++++++++ Termina Botones Sigep - Contraloria - Procuraduria +++++++++++++++ */
 
 label {
     color: #FFB233;font-weight : bold;
@@ -227,6 +173,6 @@ li {
     color: #ff954e;font-weight : bold;
 }
 
-#formLogueo {
+#formCuadro {
     border: solid 2px #cad1d1;
 }
